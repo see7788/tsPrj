@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>产品开发爬虫工具</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="js/wxwclient.js"></script>
+    <script type="text/javascript" src="js/BrowserClient.js"></script>
+    <script type="text/javascript" src="js/ProductDeveloper.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="page_wrap">
+        <div class="header">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <span class="ML10px">产品开发爬虫工具</span>
+            <a href="https://www.wxwerp.com/help/5c78c17ca2ee9c1a34abc527.html" target="_blank" class="link ML10px">查看使用教程</a>
+        </div>
+        <div class="main">
+            <div class="switch_tabs">
+                <ul>
+                    <li class="chked" data-panel="regulation">规则配置</li
+                    ><li data-panel="log">爬取记录</li>
+                </ul>
+            </div>
+            <div class="panel regulation">
+                <div class="panel_main">
+                    <div class="MB10px d-flex justify-space-between">
+                        <div>产品搜索页链接掩码：</div>
+                        <div>延迟：<input type="number" id="delay" /> 秒</div>
+                    </div>
+                    <div class="MB10px">
+                        <textarea id="pros_url" placeholder="例如：&#10https://shopee.com.my/search?keyword=dress&page=(1-10,1)&sortBy=relevancy&#10(1-10,1)代表：1-10页，每次跨度1页。支持多行规则同时执行。"></textarea>
+                    </div>
+                    <div class="MB10px">支持站点：
+                        <a href="https://www.aliexpress.com/" target="_blank"><img src="https://www.wxwerp.com/images/platform_icons/icon_1.png" class="wxw_platform_icon" alt="Aliexpress" title="Aliexpress" /></a>
+                        <a href="http://www.amazon.com" target="_blank"><img src="https://www.wxwerp.com/images/platform_icons/icon_6.png" class="wxw_platform_icon" alt="Amazon" title="Amazon" /></a>
+                        <a href="http://www.dhgate.com" target="_blank"><img src="https://www.wxwerp.com/images/platform_icons/icon_3.png" class="wxw_platform_icon" alt="Dhgate" title="Dhgate" /></a>
+                        <a href="https://shopee.sg/" target="_blank"><img src="https://www.wxwerp.com/images/platform_icons/icon_38.png" class="wxw_platform_icon" alt="shopee" title="shopee" /></a>
+                        <a href="https://www.lazada.com/" target="_blank"><img src="https://www.wxwerp.com/images/platform_icons/icon_4.png" class="wxw_platform_icon" alt="lazada" title="lazada" /></a>
+                        <a href="http://www.ebay.com" target="_blank"><img src="https://www.wxwerp.com/images/platform_icons/icon_5.png" class="wxw_platform_icon" alt="ebay" title="ebay" /></a>
+                    </div>
+                    <div class="MB10px">链接生成预览：</div>
+                    <div class="preview_links">
+                        <ul id="preview_link"></ul>
+                    </div>
+                </div>
+                <div class="panel_bottom t-center">
+                <a href="javascript:void(0);" id="btnStart" class="btn btn-default btn-large">开始执行</a></div>
+            </div>
+            <div class="panel log hidden">
+                <div class="panel_main">
+                    <div class="process crawling MB15px hidden" id="progress_cnt">
+                        <div class="MB10px">进度 <strong><span class="page">1</span>/<span class="pages">1</span></strong> 页</div>
+                        <div class="progressbar"><div class="progval progress_ani" style="width:0%;"></div></div>
+                    </div>
+                    <div class="clare MB15px">
+                        <div class="left">累计爬取 <strong class="pro_count">0</strong> 个产品</div>
+                        <div class="right">以下产品均已添加到您的旺销王产品开发中心中</div>
+                    </div>
+                    <table id="pros_cnt">
+                        <tr class="head">
+                            <td style="width:40px;">图像</td>
+                            <td style="width:auto;">名称</td>
+                            <td style="width:90px;">价格</td>
+                            <td style="width:50px;">销量</td>
+                            <td style="width:50px;">收藏量</td>
+                            <td style="width:50px;">评价</td>
+                        </tr>
+                        <tr class="tip">
+                            <td colspan="6"><div>暂未爬取到任何记录</div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

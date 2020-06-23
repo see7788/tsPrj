@@ -1,0 +1,573 @@
+.wxw_gather_loading {
+    font-family: 微软雅黑;
+    cursor: default;
+    z-index: 9999;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0px 0px 15px 3px #737171;
+    height: 170px;
+    width: 300px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#6b6b6b, #1f1f1f);
+    background: -o-linear-gradient(#6b6b6b, #1f1f1f);
+    background: -moz-linear-gradient(#6b6b6b, #1f1f1f);
+    background: linear-gradient(#6b6b6b, #1f1f1f);
+}
+
+.wxw_gather_loading img {
+    position: absolute;
+    top: 30px !important;
+    left: 100px !important;
+    width: 100px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.wxw_gather_loading .text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    left: 65px;
+    top: 74px;
+}
+
+.wxw_gather_loading .loading_wxw {
+    margin-top: 128px;
+}
+
+.btn_wxwgather {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.btn_wxwgather.wxw-d-block {
+    display: block;
+}
+
+.btn_wxwgather span.wxw-link {
+    height: 22px !important;
+    line-height: 22px !important;
+    position: absolute !important;
+    background: black !important;
+    color: white !important;
+    display: none !important;
+    z-index: 9999 !important;
+    font-size: 13px !important;
+    font-family: 微软雅黑 !important;
+    border-radius: 6px !important;
+    padding: 0px 6px 0px 6px !important;
+    white-space: nowrap;
+    word-break: keep-all;
+    width: auto !important;
+    background: #2b2b2b !important;
+    left: 4px !important;
+    top: 4px !important;
+    filter: alpha(Opacity=80) !important;
+    -moz-opacity: 0.5 !important;
+    opacity: 0.5 !important;
+}
+
+.btn_wxwgather span.wxw-link.wxw-sm {
+    height: 20px !important;
+    line-height: 20px !important;
+    font-size: 12px !important;
+    padding: 0px 6px 0px 6px !important;
+    top: -20px !important;
+    left: 0 !important;
+}
+
+.btn_wxwgather:hover span.wxw-link {
+    display: block !important;
+}
+
+.btn_wxwgather span.wxw-link:hover {
+    background-color: #444444 !important;
+    filter: alpha(Opacity=10) !important;
+    -moz-opacity: 1 !important;
+    opacity: 1 !important;
+}
+
+.btn_wxwgather span.wxw-link.clicked {
+    display: block !important;
+    background-color: #6aaf4e !important;
+    filter: alpha(Opacity=10) !important;
+    -moz-opacity: 1 !important;
+    opacity: 1 !important;
+}
+
+.loading_wxw {
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loading_wxw span {
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    background: lightgreen;
+    animation: load_wxw 1.04s ease infinite;
+}
+
+.loading_wxw span:last-child {
+    margin-right: 0px;
+}
+
+@keyframes load_wxw {
+    0% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: .2;
+        transform: scale(.2);
+    }
+}
+
+.loading_wxw span:nth-child(1) {
+    animation-delay: 0.13s;
+}
+
+.loading_wxw span:nth-child(2) {
+    animation-delay: 0.26s;
+}
+
+.loading_wxw span:nth-child(3) {
+    animation-delay: 0.39s;
+}
+
+.loading_wxw span:nth-child(4) {
+    animation-delay: 0.52s;
+}
+
+.loading_wxw span:nth-child(5) {
+    animation-delay: 0.65s;
+}
+
+
+div.wxw_message {
+    font-size: 16px;
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    background: #4b9f15;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: 999999;
+    text-align: center;
+    color: white;
+}
+
+div.wxw_exworks {font-family:微软雅黑;font-size:14px;height:124px;width:100%;position:fixed;z-index:999999;top:0;left:0;background:#f8f8f8;border-bottom:1px solid #ccc;min-width:590px}
+div.wxw_exworks div.exworks_loading {font-size:16px;line-height:124px;text-align:center;color: gray;}
+div.wxw_exworks a.wxw_close {position:absolute;top:10px;right:10px;color:gray}
+div.wxw_exworks a.wxw_close:hover {opacity:0.8;text-decoration:none}
+div.wxw_exworks img.wxw_logo {position:absolute;top:60px;right:20px;width:100px}
+div.wxw_exworks a.wxw_sign {position:absolute;bottom:10px;right:20px;color:gray;text-decoration:underline}
+div.wxw_exworks a.wxw_sign:hover {opacity:0.8}
+div.wxw_exworks div.wxw_container {padding-right:300px;width:100%;height:124px;position:absolute;top:0;left:0;}
+div.wxw_exworks div.wxw_container div.exw_list {position:absolute;height:124px;left:30px;overflow:hidden;}
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap {position:absolute;white-space:nowrap;left:20px;top:10px;background:#fff;}
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item {position:relative;padding-left:110px;display:inline-block;height:104px;width:220px;border:1px solid #ddd;background:#fff;color:#fb4659;margin-right:10px;}
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item:hover {border:1px solid #ccc;color:#fb4659;text-decoration:none}
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item div {line-height:1.5}
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item div:first-of-type {margin-bottom:4px;margin-top:4px}
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item img {position:absolute;top:1px;left:1px;}
+div.wxw_exworks div.wxw_container div.exw_list span.btn_bg {position:absolute;display:inline-block;width:20px;height:104px;background:#f8f8f8;z-index:1}
+div.wxw_exworks div.wxw_container div.exw_list span.btn_bg_l {top:10px;left:0}
+div.wxw_exworks div.wxw_container div.exw_list span.btn_bg_r {top:10px;right:0}
+div.wxw_exworks div.wxw_container div.exw_list a.move_prev {z-index:2;display:inline-block;position:absolute;width:0;height:0;border-bottom:10px solid transparent;border-top:10px solid transparent;border-right:16px solid #888;top:40px;left:0px}
+div.wxw_exworks div.wxw_container div.exw_list a.move_next {z-index:2;display:inline-block;position:absolute;width:0;height:0;border-bottom:10px solid transparent;border-top:10px solid transparent;border-left:16px solid #888;top:40px;right:0px}
+div.wxw_exworks div.wxw_container div.exw_list a.move_prev:hover {border-right-color:#444}
+div.wxw_exworks div.wxw_container div.exw_list a.move_next:hover {border-left-color:#444}
+div.wxw_exworks div.wxw_average {position:absolute;top:15px;right:180px;line-height:1.5;color:#fb4659}
+div.wxw_exworks div.wxw_average div.average_exw {margin-bottom:4px}
+
+div.wxw_message span.text a {
+    text-decoration: underline;
+    margin: 0px 2px 0px 2px;
+    color: white;
+}
+
+div.wxw_message a.close {
+    font-size: 12px;
+    margin: 0px 2px 0px 2px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+div.wxw_message img.wxw_logo {
+    width: 68px;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    padding: 0
+}
+
+div.wxw_message.error {
+    background: #e37772;
+}
+
+div.wxw_exworks {
+    font-family: 微软雅黑;
+    font-size: 14px;
+    height: 124px;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    min-width: 590px
+}
+
+div.wxw_exworks div.exworks_loading {
+    font-size: 16px;
+    line-height: 124px;
+    text-align: center;
+    color: gray;
+}
+
+div.wxw_exworks a.wxw_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: gray
+}
+
+div.wxw_exworks a.wxw_close:hover {
+    opacity: 0.8;
+    text-decoration: none
+}
+
+div.wxw_exworks img.wxw_logo {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 100px
+}
+
+div.wxw_exworks a.wxw_sign {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: gray;
+    text-decoration: underline
+}
+
+div.wxw_exworks a.wxw_sign:hover {
+    opacity: 0.8
+}
+
+div.wxw_exworks div.wxw_container {
+    padding-right: 300px;
+    width: 100%;
+    height: 124px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.wxw_exworks div.wxw_container div.exw_list {
+    position: absolute;
+    height: 124px;
+    left: 30px;
+    overflow: hidden;
+}
+
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap {
+    position: absolute;
+    white-space: nowrap;
+    left: 20px;
+    top: 10px;
+    background: #fff;
+}
+
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item {
+    position: relative;
+    padding-left: 110px;
+    display: inline-block;
+    height: 104px;
+    width: 220px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #fb4659;
+    margin-right: 10px;
+}
+
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item:hover {
+    border: 1px solid #ccc;
+    color: #fb4659;
+    text-decoration: none
+}
+
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item div {
+    line-height: 1.5
+}
+
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item div:first-of-type {
+    margin-bottom: 4px;
+    margin-top: 4px
+}
+
+div.wxw_exworks div.wxw_container div.exw_list div.items_wrap a.wxw_item img {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+div.wxw_exworks div.wxw_container div.exw_list span.btn_bg {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 104px;
+    background: #f8f8f8;
+    z-index: 1
+}
+
+div.wxw_exworks div.wxw_container div.exw_list span.btn_bg_l {
+    top: 10px;
+    left: 0
+}
+
+div.wxw_exworks div.wxw_container div.exw_list span.btn_bg_r {
+    top: 10px;
+    right: 0
+}
+
+div.wxw_exworks div.wxw_container div.exw_list a.move_prev {
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 16px solid #888;
+    top: 40px;
+    left: 0px
+}
+
+div.wxw_exworks div.wxw_container div.exw_list a.move_next {
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 16px solid #888;
+    top: 40px;
+    right: 0px
+}
+
+div.wxw_exworks div.wxw_container div.exw_list a.move_prev:hover {
+    border-right-color: #444
+}
+
+div.wxw_exworks div.wxw_container div.exw_list a.move_next:hover {
+    border-left-color: #444
+}
+
+div.wxw_exworks div.wxw_average {
+    position: absolute;
+    top: 15px;
+    right: 180px;
+    line-height: 1.5;
+    color: #fb4659
+}
+
+div.wxw_exworks div.wxw_average div.average_exw {
+    margin-bottom: 4px
+}
+
+@keyframes wxw_gather_dailog_barberpole {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 600px 0%;
+    }
+}
+
+.wxw_gather_dialog_wrapper {
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    left: 95px;
+    right: 95px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    z-index: 9999;
+}
+
+.wxw_gather_dialog {
+    background: #f6f6f6;
+    padding: 50px 10px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: "Microsoft YaHei";
+}
+
+.wxw_gather_dialog_logo {
+    width: 100px;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
+.wxw_gather_dialog_btn {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #5bc0de;
+    background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+    color: #fff;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.wxw_gather_dialog_btn:hover {
+    background: #2f96b4;
+}
+
+.wxw_gather_dialog_main {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 54px;
+}
+
+.wxw_gather_dialog_tabs {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.wxw_gather_dialog_tab {
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.wxw_gather_dialog_tab_chked {
+    border-top: 2px solid #6aaf4e;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #fff;
+}
+
+.wxw_gather_dialog_process_wrapper {
+    background: #fff;
+    position: absolute;
+    width: calc(100% - 60px);
+    bottom: 51px;
+    left: 20px;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.wxw_gather_dialog_process {
+    background: #fff;
+    border: 1px solid #c6daad;
+    border-radius: 3px;
+    height: 6px;
+    margin-bottom: 6px;
+}
+
+.wxw_gather_dialog_process_bar {
+    background: repeating-linear-gradient(-45deg, #a3d471, #a3d471 30px, #92c55d 30px, #92c55d 60px);
+    height: 6px;
+    animation: wxw_gather_dailog_barberpole 12s linear infinite;
+}
+
+.wxw_gather_dialog_process_bar.wxw_gather_dialog_process_bar_done {
+    background: #a3d471;
+    animation: none;
+}
+
+.wxw_gather_dialog_product_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+    margin-right: -10px;
+}
+
+.wxw_gather_dialog_product {
+    background: #f6f6f6;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.wxw_gather_dialog_product_success {
+    background: #92c55d;
+    color: #fff;
+}
+
+.wxw_gather_dialog_product_pic {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wxw_gather_dialog_product_pic img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.wxw_gather_dialog_product_state {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.wxw_gather_dialog_product_state_success {
+    display: none;
+}
+
+.wxw_gather_dialog_product_state_pending {
+    color: gray;
+}
+
+.wxw_gather_dialog_product_success .wxw_gather_dialog_product_state_pending {
+    display: none;
+}
+
+.wxw_gather_dialog_product_success .wxw_gather_dialog_product_state_success {
+    display: inline;
+}
